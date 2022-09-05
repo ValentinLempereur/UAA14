@@ -13,10 +13,35 @@ namespace Exercice_1
             Console.WriteLine(question);
             while (!double.TryParse(Console.ReadLine(), out nbr))
             {
-                Console.WriteLine("Reencoder votre chiffre");
+                Console.Clear();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Réencoder votre chiffre");
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.Clear();
             }
 
             return nbr;
+        }
+
+        public double Moyenne(double []T)
+        {
+            double result = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                result = result + T[i];
+            }
+
+            result = result / 10;
+
+            return result;
+        }
+
+        public void Affiche(double[] T)
+        {
+            for (int i = 0; i < T.GetLength(0); i++)
+            {
+                Console.Write(T[i]);
+            }
         }
     }
 }

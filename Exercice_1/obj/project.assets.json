@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\160646.asty-moulin\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\lemer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -17,14 +17,15 @@
       "projectUniqueName": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\Exercice_1\\Exercice_1.csproj",
       "projectName": "Exercice_1",
       "projectPath": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\Exercice_1\\Exercice_1.csproj",
-      "packagesPath": "C:\\Users\\160646.asty-moulin\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\lemer\\.nuget\\packages\\",
       "outputPath": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\Exercice_1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\160646.asty-moulin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lemer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
