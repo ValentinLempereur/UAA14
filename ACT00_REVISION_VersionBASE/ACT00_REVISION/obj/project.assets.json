@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\160646.asty-moulin\\.nuget\\packages\\": {},
+    "C:\\Users\\160646.asty-moulin.000\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -17,14 +17,14 @@
       "projectUniqueName": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\ACT00_REVISION_VersionBASE\\ACT00_REVISION\\ACT00_REVISION.csproj",
       "projectName": "ACT00_REVISION",
       "projectPath": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\ACT00_REVISION_VersionBASE\\ACT00_REVISION\\ACT00_REVISION.csproj",
-      "packagesPath": "C:\\Users\\160646.asty-moulin\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\160646.asty-moulin.000\\.nuget\\packages\\",
       "outputPath": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\ACT00_REVISION_VersionBASE\\ACT00_REVISION\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\160646.asty-moulin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\160646.asty-moulin.000\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

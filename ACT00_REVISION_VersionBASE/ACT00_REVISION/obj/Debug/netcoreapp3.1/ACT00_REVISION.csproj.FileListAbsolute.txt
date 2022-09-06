@@ -12,3 +12,17 @@
 \\Mac\Home\Desktop\COURS_TI\UAA NOUVEAU PROGRAMME\UAA14 POO\ACT00_REVISION\ACT00_REVISION\obj\Debug\netcoreapp3.1\ACT00_REVISION.dll
 \\Mac\Home\Desktop\COURS_TI\UAA NOUVEAU PROGRAMME\UAA14 POO\ACT00_REVISION\ACT00_REVISION\obj\Debug\netcoreapp3.1\ACT00_REVISION.pdb
 \\Mac\Home\Desktop\COURS_TI\UAA NOUVEAU PROGRAMME\UAA14 POO\ACT00_REVISION\ACT00_REVISION\obj\Debug\netcoreapp3.1\ACT00_REVISION.genruntimeconfig.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\bin\Debug\netcoreapp3.1\ACT00_REVISION.exe
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\bin\Debug\netcoreapp3.1\ACT00_REVISION.deps.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\bin\Debug\netcoreapp3.1\ACT00_REVISION.runtimeconfig.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\bin\Debug\netcoreapp3.1\ACT00_REVISION.runtimeconfig.dev.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\bin\Debug\netcoreapp3.1\ACT00_REVISION.dll
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\bin\Debug\netcoreapp3.1\ACT00_REVISION.pdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\obj\Debug\netcoreapp3.1\ACT00_REVISION.csproj.AssemblyReference.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\obj\Debug\netcoreapp3.1\ACT00_REVISION.GeneratedMSBuildEditorConfig.editorconfig
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\obj\Debug\netcoreapp3.1\ACT00_REVISION.AssemblyInfoInputs.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\obj\Debug\netcoreapp3.1\ACT00_REVISION.AssemblyInfo.cs
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\obj\Debug\netcoreapp3.1\ACT00_REVISION.csproj.CoreCompileInputs.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\obj\Debug\netcoreapp3.1\ACT00_REVISION.dll
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\obj\Debug\netcoreapp3.1\ACT00_REVISION.pdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\ACT00_REVISION_VersionBASE\ACT00_REVISION\obj\Debug\netcoreapp3.1\ACT00_REVISION.genruntimeconfig.cache
