@@ -1,0 +1,12 @@
+﻿<Window x:Class="Ex_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex_4"
+        mc:Ignorable="d"
+        Title="Exercice_4" Height="250" Width="600" HorizontalAlignment="Left">
+    <Grid>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center">Dans le plancher pour savoir si quelqu'un marchait et quel poids il faisait. Le cœur pouvait alors déterminer de quelle personne il s'agissait. Dans les murs, des cellules photosensibles, des micro-caméras et tout un réseau de détecteurs divers (magnétique, pression, infrarouge...) permettait de déterminer la position exacte de chaque personne et objet dans la maison, de ventiler ou chauffer en conséquence, d'allumer ou d'éteindre la lumière...</TextBlock>
+    </Grid>
+</Window>
