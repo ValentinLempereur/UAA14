@@ -1,0 +1,14 @@
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\obj\Debug\netcoreapp3.1\Exercice_1.csproj.AssemblyReference.cache
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\obj\Debug\netcoreapp3.1\Exercice_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\obj\Debug\netcoreapp3.1\Exercice_1.AssemblyInfoInputs.cache
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\obj\Debug\netcoreapp3.1\Exercice_1.AssemblyInfo.cs
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\obj\Debug\netcoreapp3.1\Exercice_1.csproj.CoreCompileInputs.cache
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\bin\Debug\netcoreapp3.1\Exercice_1.exe
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\bin\Debug\netcoreapp3.1\Exercice_1.deps.json
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\bin\Debug\netcoreapp3.1\Exercice_1.runtimeconfig.json
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\bin\Debug\netcoreapp3.1\Exercice_1.runtimeconfig.dev.json
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\bin\Debug\netcoreapp3.1\Exercice_1.dll
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\bin\Debug\netcoreapp3.1\Exercice_1.pdb
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\obj\Debug\netcoreapp3.1\Exercice_1.dll
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\obj\Debug\netcoreapp3.1\Exercice_1.pdb
+C:\Users\160646.asty-moulin.000\Desktop\UML\Exercice_1\obj\Debug\netcoreapp3.1\Exercice_1.genruntimeconfig.cache
