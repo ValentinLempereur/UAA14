@@ -1,0 +1,84 @@
+﻿<Window x:Class="P622_I1_Lempereur.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P622_I1_Lempereur"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" FontSize="22" FontWeight="Bold" Background="#F2AB27">
+    <Grid>
+
+        <!-- ..................................GRID.................................. -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <!-- ........................................................................ -->
+
+        <!-- ............................PREMIER..................................... -->
+        <GroupBox Header="Paramétrage du jeu et des Joueurs" Margin="0,7,0,0">
+            <StackPanel >
+                <StackPanel Orientation="Horizontal">
+                    <Label Margin="0,10,0,0" >Nombre de dés (de 6 à 8)</Label>
+                    <TextBox  HorizontalAlignment="Center" Height="35" Width="60" Margin="15,0,0,0"></TextBox>
+                </StackPanel>
+                <Label Margin="0,10,0,0">Joueur déjà inscrit ( de 2 à 4 )</Label>
+                <ComboBox Margin="0,10,0,0">
+                    <ComboBoxItem>Valentin Lempereur</ComboBoxItem>
+                    <ComboBoxItem>Audry Lauwers</ComboBoxItem>
+                    <ComboBoxItem>Philipe Picard</ComboBoxItem>
+                </ComboBox>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <Label>Pseudo</Label>
+                    <TextBox Width="240" Margin="5,0,0,0"></TextBox>
+                </StackPanel>
+                
+                <Button x:Name="btnAjoutPLayer" Background="#F2E963" Foreground="#D95829" Margin="0,12,0,0">Ajouter</Button>
+            </StackPanel>
+        </GroupBox>
+        <!-- ........................................................................ -->
+
+        <!-- ...........................DEUXIEME...................................... -->
+        <StackPanel Grid.Column="1" Margin="15,0,15,0" >
+            <Label>C'est au tour de ...</Label>
+            <Button x:Name="btnLancerDe" Background="#F2E963" Foreground="#D95829" Margin="0,5,15,0">LANCER DES</Button>
+
+            <GroupBox Grid.Column="1" Margin="15,5,15,0" Header="Résultat">
+                <StackPanel>
+                    <Label>Jet :  (1)(2)(2)(5)(6)...</Label>
+                    <Label></Label>
+                    <Label>Points gagnés : ...</Label>
+                    <Label>Total des gagnés : ...</Label>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+
+        <!-- ........................................................................ -->
+
+        <!-- ...........................troisieme.................................... -->
+        <GroupBox Grid.Row="1" Margin="0,7,0,7">
+            <StackPanel VerticalAlignment="Center">
+                <Button x:Name="btnStart" Background="#F2E963" Foreground="#D95829">Démarrer le jeu</Button>
+                <Button x:Name="btnStop" Background="#F2E963" Foreground="#D95829">Stopper le jeu</Button>
+            </StackPanel>
+        </GroupBox>
+        <!-- ........................................................................ -->
+
+        <!-- ...........................quatrième.................................... -->
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="15,0,15,0">
+            <Label>'Pseudo' tu peux relancer 3 dés ! : .</Label>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBox Width="13" Height="13" VerticalAlignment="Top"></TextBox>
+                <TextBlock Margin="7,0,0,0" >Relancer !</TextBlock>
+            </StackPanel>
+            <Button x:Name="btnNextPLayer" Background="#F2E963" Foreground="#D95829" Margin="0,10,0,0">JOUEUR SUIVANT</Button>
+        </StackPanel>
+        <!-- ........................................................................ -->
+
+    </Grid>
+</Window>
