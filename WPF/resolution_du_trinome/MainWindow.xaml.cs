@@ -24,5 +24,15 @@ namespace resolution_du_trinome
         {
             InitializeComponent();
         }
+
+        private void Button_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Button bouton = sender as Button;
+        }
+
+        private void Button_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
