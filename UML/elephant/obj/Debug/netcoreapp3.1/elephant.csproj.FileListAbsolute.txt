@@ -1,0 +1,14 @@
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\bin\Debug\netcoreapp3.1\elephant.exe
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\bin\Debug\netcoreapp3.1\elephant.deps.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\bin\Debug\netcoreapp3.1\elephant.runtimeconfig.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\bin\Debug\netcoreapp3.1\elephant.runtimeconfig.dev.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\bin\Debug\netcoreapp3.1\elephant.dll
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\bin\Debug\netcoreapp3.1\elephant.pdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\obj\Debug\netcoreapp3.1\elephant.csproj.AssemblyReference.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\obj\Debug\netcoreapp3.1\elephant.GeneratedMSBuildEditorConfig.editorconfig
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\obj\Debug\netcoreapp3.1\elephant.AssemblyInfoInputs.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\obj\Debug\netcoreapp3.1\elephant.AssemblyInfo.cs
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\obj\Debug\netcoreapp3.1\elephant.csproj.CoreCompileInputs.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\obj\Debug\netcoreapp3.1\elephant.dll
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\obj\Debug\netcoreapp3.1\elephant.pdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\elephant\obj\Debug\netcoreapp3.1\elephant.genruntimeconfig.cache
