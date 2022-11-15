@@ -16,17 +16,20 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBox Height="80" Width="200" Background="White" HorizontalAlignment="Right" Margin="0,0,50,0" Grid.Row="0"></TextBox>
+        <TextBox x:Name="A" Height="80" Width="200" Background="White" HorizontalAlignment="Right" Margin="0,0,50,0" Grid.Row="0"></TextBox>
         <TextBlock Height="80" Width="35" HorizontalAlignment="Left" Margin="80,0,0,0" Grid.Row="0">A</TextBlock>
         
-        <TextBox Height="80" Width="200" Background="White" HorizontalAlignment="Right" Margin="0,0,50,0" Grid.Row="1"></TextBox>
+        <TextBox x:Name="B" Height="80" Width="200" Background="White" HorizontalAlignment="Right" Margin="0,0,50,0" Grid.Row="1"></TextBox>
         <TextBlock Height="80" Width="35" HorizontalAlignment="Left" Margin="80,0,0,0" Grid.Row="1">B</TextBlock>
         
-        <TextBox Height="80" Width="200" Background="White" HorizontalAlignment="Right" Margin="0,0,50,0" Grid.Row="2"></TextBox>
+        <TextBox x:Name="C" Height="80" Width="200" Background="White" HorizontalAlignment="Right" Margin="0,0,50,0" Grid.Row="2"></TextBox>
         <TextBlock Height="80" Width="35" HorizontalAlignment="Left" Margin="80,0,0,0" Grid.Row="2">C</TextBlock>
-        
 
-        <Button Height="65" Width="300" HorizontalAlignment="Left" Margin="20,0,0,0" Background="YellowGreen" BorderBrush="Transparent" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" >CALCULER</Button>
+        <StackPanel Orientation="Horizontal" Grid.Row="4">
+            <Button Height="65" Width="300" HorizontalAlignment="Left" Margin="20,0,0,0" Background="YellowGreen" BorderBrush="Transparent" Grid.Row="4" MouseEnter="Button_MouseEnter" MouseLeave="Button_MouseLeave" Click="Button_Click" >CALCULER</Button>
+            <Button x:Name="Result" Height="65" Width="50" Background="CadetBlue" Foreground="CadetBlue" Grid.Row="4" Margin="10,0,0,0">V</Button>
+        </StackPanel>
+        
         
     </Grid>
 </Window>
