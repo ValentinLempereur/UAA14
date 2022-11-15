@@ -25,6 +25,42 @@ namespace Exercice_1
             string phrase= "Nom : " + this._nom + " - Age : " + this._age + " ans" + "  - Race : " + this._race;
             return phrase;
         }
-        
+
+        public int Age
+        {
+            get
+            {
+                return _age;
+            }
+            set
+            {      
+                _age = value;
+            }
+        }
+
+        public string Nom
+        {
+            get
+            {
+                return _nom;
+            }
+            set
+            {
+                _nom = value;
+            }
+        }
+
+        public string Race
+        {
+            get
+            {
+                return _race;
+            }
+            set
+            {
+                _race = value;
+            }
+        }
+
     }
 }
