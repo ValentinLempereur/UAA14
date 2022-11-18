@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Les_Chalets/1.0.0": {
+        "runtime": {
+          "Les_Chalets.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Les_Chalets/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
