@@ -23,7 +23,9 @@ namespace Les_Chalets
         string logement;
         int prix;
         bool reservation = false;
-        bool vacance = false;
+        bool vacance;
+        int NbrJour;
+        int NbrSemaine;
 
         int GChalet1P = 547;
         int GChalet2P = 581;
@@ -84,6 +86,15 @@ namespace Les_Chalets
         private void BtnCalculer_Click(object sender, RoutedEventArgs e)
         {
             TextBox person = this.FindName("TxtBoxNbr") as TextBox;
+            if (NbrSemaine > 2)
+            {
+                vacance = true;
+            }
+            else
+            {
+                vacance = false;
+            }
+
             if (logement == "Tente")
             {
                 if (vacance == true)
@@ -221,7 +232,8 @@ namespace Les_Chalets
         {
             TextBox Date1 = this.FindName("TxtBoxArrive") as TextBox;
             TextBox Date2 = this.FindName("TxtBoxSortie") as TextBox;
-            string messageError = "Date Invalide";
+            string message = "Date Invalide";
+
 
             if (DateTime.TryParse(Date1.Text, out DateTime DateArrive) && DateTime.TryParse(Date2.Text, out DateTime DateSortie))
             {
@@ -230,17 +242,90 @@ namespace Les_Chalets
 
                 if ((mois1 == 4 && mois2 == 4) || ((mois1 == 7 || mois1 == 8) && (mois2 == 7 || mois2 == 8)) || ((mois1 == 12 || mois1 == 1) && (mois2 == 12 || mois2 == 1)))
                 {
-                    
+                    if (DateArrive.Month > DateSortie.Month || DateArrive.Month == DateSortie.Month)
+                    {
+                        if (DateArrive.Day > DateSortie.Day)
+                        {
+                            NbrJour = DateArrive.Day - DateSortie.Day;
+                            CalculSemaine(NbrJour, out NbrSemaine);
+
+                            if (NbrSemaine > 10)
+                            {
+                                txtblckNbrsemaine.Text = "Nombre de semaines : " + message;
+                            }
+                            else
+                            {
+                                txtblckNbrsemaine.Text = "Nombre de semaines : " + NbrSemaine;
+                            }
+                        }
+                        else
+                        {
+                            NbrJour = DateSortie.Day - DateArrive.Day;
+                            CalculSemaine(NbrJour, out NbrSemaine);
+                            txtblckNbrsemaine.Text = "Nombre de semaines : " + NbrSemaine;
+                            if (NbrSemaine > 10)
+                            {
+                                txtblckNbrsemaine.Text = "Nombre de semaines : " + message;
+                            }
+                            else
+                            {
+                                txtblckNbrsemaine.Text = "Nombre de semaines : " + NbrSemaine;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        NbrJour = 31 - DateArrive.Day;
+                        NbrJour = NbrJour + DateSortie.Day;
+                        CalculSemaine(NbrJour, out NbrSemaine);
+                        txtblckNbrsemaine.Text = "Nombre de semaines : " + NbrSemaine;
+                        if (NbrSemaine > 10)
+                        {
+                            txtblckNbrsemaine.Text = "Nombre de semaines : " + message;
+                        }
+                        else
+                        {
+                            txtblckNbrsemaine.Text = "Nombre de semaines : " + NbrSemaine;
+                        }
+                    }
                 }
                 else
                 {
-                    txtblckNbrsemaine.Text = "Nombre de semaines : " + messageError;
+                    txtblckNbrsemaine.Text = "Nombre de semaines : " + message;
                 }
             }
             else
             {
-                txtblckNbrsemaine.Text = "Nombre de semaines : " + messageError;
+                txtblckNbrsemaine.Text = "Nombre de semaines : " + message;
             }
+        }
+
+        public void CalculSemaine(int NbrJour, out int NbrSemaine)
+        {
+            NbrSemaine = 0;
+            bool ok = false;
+
+            do
+            {
+                if (NbrJour > 7)
+                {
+                    NbrSemaine = NbrSemaine + 1;
+                    NbrJour = NbrJour - 7;
+                }
+                else if (NbrJour == 0)
+                {
+                    ok = true;
+                }
+                else
+                {
+                    NbrSemaine = NbrSemaine + 1;
+                    ok = true;
+                }
+
+            } while (!ok);
+
+            
+
         }
     }
 }

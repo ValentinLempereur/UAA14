@@ -10,14 +10,15 @@
         "projectUniqueName": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\WPF\\Les_Chalets\\Les_Chalets.csproj",
         "projectName": "Les_Chalets",
         "projectPath": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\WPF\\Les_Chalets\\Les_Chalets.csproj",
-        "packagesPath": "C:\\Users\\160646.asty-moulin\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\lemer\\.nuget\\packages\\",
         "outputPath": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\WPF\\Les_Chalets\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\160646.asty-moulin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lemer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
