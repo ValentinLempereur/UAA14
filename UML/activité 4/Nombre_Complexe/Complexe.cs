@@ -35,7 +35,7 @@ namespace Nombre_Complexe
             }
             set
             {
-                _NbrReelle = value;
+                _NbrReelle = _NbrReelle + value;
             }
         }
         public double Imaginaire
@@ -46,7 +46,7 @@ namespace Nombre_Complexe
             }
             set
             {
-                _NbrImaginaire = value;
+                _NbrImaginaire = _NbrImaginaire + value;
             }
         }
     }

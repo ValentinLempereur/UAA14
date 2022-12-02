@@ -25,7 +25,7 @@ namespace Nombre_Complexe
             Nbr1.Imaginaire = int.Parse(Console.ReadLine());
             Console.Clear();
 
-            Console.WriteLine("Le second " + Nbr1.AfficheCaracteristique(Value));
+            Console.WriteLine("Le premier complexe devient " + Nbr1.AfficheCaracteristique(Value));
 
 
         }
