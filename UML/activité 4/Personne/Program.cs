@@ -89,6 +89,7 @@ namespace Personne
                 else
                 {
                     ok = false;
+                    Environment.Exit(0);
                 }
             } while (ok);
         }
