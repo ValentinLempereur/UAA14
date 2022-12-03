@@ -12,9 +12,12 @@ namespace Personne
             string Prénom;
             double Argent;
             bool ok = true;
+            int pers1 = 0;
+            int pers2 = 1;
 
             do
             {
+                Console.Clear();
                 Console.WriteLine("Bienvenue dans notre gestionnaire de porte monnaie !\n");
 
                 for (int i = 0; i < 2; i++)
@@ -40,10 +43,10 @@ namespace Personne
                     Console.Clear();
 
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("Ajout effectué !");
+                    Console.WriteLine("Ajout effectué !\n");
                     Console.ForegroundColor = ConsoleColor.White;
-                    Console.WriteLine(Personnes[i].Nom + " a " + Personnes[i].Monnaie + "Euros dans son porte monnaie");
-                    Console.WriteLine(Personnes[o].Nom + " a " + Personnes[o].Monnaie + "Euros dans son porte monnaie");
+                    Console.WriteLine(Personnes[pers1].Nom + " a " + Personnes[pers1].Monnaie + " Euros dans son porte monnaie");
+                    Console.WriteLine(Personnes[pers2].Nom + " a " + Personnes[pers2].Monnaie + " Euros dans son porte monnaie");
                     Console.ReadLine();
                     Console.Clear();
 
@@ -66,8 +69,8 @@ namespace Personne
                         Personnes[i].Monnaie = Personnes[i].Monnaie + nbr;
                         Console.Clear();
 
-                        Console.WriteLine(Personnes[i].Nom + " a " + Personnes[i].Monnaie + "Euros dans son porte monnaie");
-                        Console.WriteLine(Personnes[o].Nom + " a " + Personnes[o].Monnaie + "Euros dans son porte monnaie");
+                        Console.WriteLine(Personnes[pers1].Nom + " a " + Personnes[pers1].Monnaie + " Euros dans son porte monnaie");
+                        Console.WriteLine(Personnes[pers2].Nom + " a " + Personnes[pers2].Monnaie + " Euros dans son porte monnaie\n");
                         Console.WriteLine("appuyer sur ENTER pour passer à la suite");
                         Console.ReadLine();
                         Console.Clear();
@@ -77,7 +80,7 @@ namespace Personne
                 }
 
 
-                Console.WriteLine("Voulez-vous recommencer ? (si oui faites un espace");
+                Console.WriteLine("Voulez-vous recommencer ? (si oui faites un espace)");
 
                 if (" " == Console.ReadLine())
                 {
