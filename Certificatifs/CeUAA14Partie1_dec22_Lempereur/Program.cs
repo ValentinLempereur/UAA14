@@ -76,7 +76,7 @@ namespace CeUAA14Partie1_dec22_Lempereur
             Console.WriteLine("-----------------------------------------------------------------------------");
             Console.WriteLine("versement de 500 euros du compte de la personne 3 sur le compte de la personne 1 !");
             Console.WriteLine("-----------------------------------------------------------------------------");
-            //bonus avec valeur en ajouter des console.readline
+            //bonus avec valeur en ajoutant des console.readline
             int valeur = 500;
             int choixPersonne = 2;
             Console.WriteLine(Personne[choixPersonne].Vérification(valeur));
