@@ -37,6 +37,7 @@ namespace Calculette_Binaire_WPF
             if (RadioBtnAddition.IsChecked == true)
             {
                 fonction.Additionne(out tRes, out bool ok, t1, t2);
+                TxtResult.Text = "";
                 for (int i = 0; i < 8; i++)
                 {
                     TxtResult.Text = TxtResult.Text + tRes[i];
@@ -46,6 +47,7 @@ namespace Calculette_Binaire_WPF
             else if (RadioBtnSoustraction.IsChecked == true)
             {
                 fonction.Soustraction(t1, t2, out tRes);
+                TxtResult.Text = "";
                 for (int i = 0; i < 8; i++)
                 {
                     TxtResult.Text = TxtResult.Text + tRes[i];
