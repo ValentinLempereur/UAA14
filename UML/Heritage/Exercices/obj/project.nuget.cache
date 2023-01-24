@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Mm9Hixhx5/AXu7dIopeL816eo9Yci5TkqPJ3GmEY1ot3pse8RoNfISZl6qc1hak8NT/SUNjQ6FZs5VTg0eJBNA==",
+  "success": true,
+  "projectFilePath": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\UML\\Heritage\\Exercices\\Exercices.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lemer\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\6.0.13\\microsoft.netcore.app.host.win-x86.6.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
