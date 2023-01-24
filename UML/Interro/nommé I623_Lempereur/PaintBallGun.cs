@@ -27,7 +27,7 @@ namespace nommé_I623_Lempereur
         {
             Double ballesC = 0;
 
-            ballesC = 16 - _balleChargeur;
+            ballesC = 16 - _balleChargeur; //Ici changer le 16 par _tailleChargeur
             
             if (_balleChargeur == 16)
             {
@@ -100,5 +100,33 @@ namespace nommé_I623_Lempereur
         {
             Console.WriteLine("Vous avez un total de " + _ballePoche + " balles dans votre poche et " + _balleChargeur + " balles dans le chargeur");
         }
+
+        /*public void ChangerChargeur(Double x)
+        {
+            je rajoute un Private Double _tailleChargeur
+
+            je le défini de dans le constructeur
+            _tailleChargeur = 16;
+
+            je change qq paramtre dans mes void le chiffre 
+            16 par _Taillechargeur 
+
+
+            La suite ici pour changer la taille
+            
+            if(x > 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("La taille du chargeur à été modifié");
+                Console.ForegroundColor = ConsoleColor.White;
+                _tailleChargeur = x;
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Attention la nouvelle taille du chargeur ne peut pas être appliquer, elle ne convient pas dans la forme");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+        }*/
     }
 }
