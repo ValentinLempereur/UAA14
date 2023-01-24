@@ -14,8 +14,6 @@ namespace I1P622_Lempereur
             this._couleur = couleur;
         }
 
-   
-
 
         public string Affiche()
         {

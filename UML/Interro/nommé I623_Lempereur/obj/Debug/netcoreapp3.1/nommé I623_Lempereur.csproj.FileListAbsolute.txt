@@ -1,0 +1,14 @@
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\bin\Debug\netcoreapp3.1\nommé I623_Lempereur.exe
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\bin\Debug\netcoreapp3.1\nommé I623_Lempereur.deps.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\bin\Debug\netcoreapp3.1\nommé I623_Lempereur.runtimeconfig.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\bin\Debug\netcoreapp3.1\nommé I623_Lempereur.runtimeconfig.dev.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\bin\Debug\netcoreapp3.1\nommé I623_Lempereur.dll
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\bin\Debug\netcoreapp3.1\nommé I623_Lempereur.pdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\obj\Debug\netcoreapp3.1\nommé I623_Lempereur.csproj.AssemblyReference.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\obj\Debug\netcoreapp3.1\nommé I623_Lempereur.GeneratedMSBuildEditorConfig.editorconfig
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\obj\Debug\netcoreapp3.1\nommé I623_Lempereur.AssemblyInfoInputs.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\obj\Debug\netcoreapp3.1\nommé I623_Lempereur.AssemblyInfo.cs
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\obj\Debug\netcoreapp3.1\nommé I623_Lempereur.csproj.CoreCompileInputs.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\obj\Debug\netcoreapp3.1\nommé I623_Lempereur.dll
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\obj\Debug\netcoreapp3.1\nommé I623_Lempereur.pdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Interro\nommé I623_Lempereur\obj\Debug\netcoreapp3.1\nommé I623_Lempereur.genruntimeconfig.cache

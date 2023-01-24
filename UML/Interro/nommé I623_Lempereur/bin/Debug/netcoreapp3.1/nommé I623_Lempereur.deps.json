@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "nommé I623_Lempereur/1.0.0": {
+        "runtime": {
+          "nommé I623_Lempereur.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "nommé I623_Lempereur/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
