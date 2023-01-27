@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CeUAA14Partie2_dec22_Lempereur"
         mc:Ignorable="d"
         
-        Title="MainWindow" Height="450" Width="800" FontSize="30">
+        Title="MainWindow" Height="720" Width="800" FontSize="36">
     <Grid x:Name="grdMain" Background="#FF5DB188">
 
         <Grid.ColumnDefinitions>

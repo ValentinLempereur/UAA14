@@ -24,7 +24,7 @@ namespace CeUAA14Partie2_dec22_Lempereur
         {
             InitializeComponent();
             prepareInterface();
-            test(sender);
+            //test(sender);
         }
 
         public void prepareInterface()
@@ -32,6 +32,7 @@ namespace CeUAA14Partie2_dec22_Lempereur
             //------------------------------Main Dimension---------------------------------
             this.Width = 800;
             this.Height = 720;
+            this.FontSize = 36;
             //-----------------------------------------------------------------------------
             Button[] Btn = new Button[100];
             int Compte = 0;
@@ -47,8 +48,8 @@ namespace CeUAA14Partie2_dec22_Lempereur
                         Compte++;
                         Btn[i] = new Button();
                         Btn[i].Content = Compte;
-                        Btn[i].Width = 40;
-                        Btn[i].Height = 40;
+                        Btn[i].Width = 60;
+                        Btn[i].Height = 60;
                         Btn[i].VerticalAlignment = VerticalAlignment.Center;
                         Btn[i].HorizontalAlignment = HorizontalAlignment.Center;
                         if (j == 1 || j == 3 || j == 5 || j == 7 || j == 9)
@@ -72,12 +73,12 @@ namespace CeUAA14Partie2_dec22_Lempereur
                     {
                         Btn[i] = new Button();
                         Btn[i].Content = Compte;
-                        Btn[i].Width = 40;
-                        Btn[i].Height = 40;
+                        Btn[i].Width = 60;
+                        Btn[i].Height = 60;
                         Btn[i].VerticalAlignment = VerticalAlignment.Center;
                         Btn[i].HorizontalAlignment = HorizontalAlignment.Center;
                         if (j == 1 || j == 3 || j == 5 || j == 7 || j == 9)
-                        {                  
+                        {
                             Btn[i].Background = Brushes.Aqua;
                         }
                         else
@@ -94,7 +95,7 @@ namespace CeUAA14Partie2_dec22_Lempereur
             }
         }
 
-        public void test(object sender)
+        /*public void test(object sender)
         {
             Random alea = new Random();
             int de;
@@ -135,6 +136,6 @@ namespace CeUAA14Partie2_dec22_Lempereur
             {
                 BtnPlay.Content = "plus d'isponible";
             }
-        }
+        }*/
     }
 }
