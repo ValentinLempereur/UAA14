@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\160646.asty-moulin\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\lemer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -17,14 +16,11 @@
       "projectUniqueName": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\Certificatifs\\CeUAA14Partie2_dec22_Lempereur\\CeUAA14Partie2_dec22_Lempereur.csproj",
       "projectName": "CeUAA14Partie2_dec22_Lempereur",
       "projectPath": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\Certificatifs\\CeUAA14Partie2_dec22_Lempereur\\CeUAA14Partie2_dec22_Lempereur.csproj",
-      "packagesPath": "C:\\Users\\160646.asty-moulin\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\lemer\\.nuget\\packages\\",
       "outputPath": "E:\\5tti informatique Val\\2022\\Exercice_Git\\UAA14\\Certificatifs\\CeUAA14Partie2_dec22_Lempereur\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\160646.asty-moulin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lemer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -55,10 +51,29 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x86",
+            "version": "[3.1.32, 3.1.32]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -67,7 +82,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

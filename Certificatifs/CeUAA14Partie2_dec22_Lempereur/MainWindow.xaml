@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CeUAA14Partie2_dec22_Lempereur"
         mc:Ignorable="d"
         
-        Title="MainWindow" Height="720" Width="800" FontSize="36">
+        Title="MainWindow" Height="450" Width="800" FontSize="30">
     <Grid x:Name="grdMain" Background="#FF5DB188">
 
         <Grid.ColumnDefinitions>
@@ -20,42 +20,16 @@
 
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center">SERPENT ET ECHELLES</TextBlock>
-        <TextBox  Background="#FFC38F3D" Grid.ColumnSpan="2" Margin="615,72,10,0" Grid.RowSpan="2"/>
-        <StackPanel Grid.Column="1" Grid.Row="1" >
-            <TextBlock x:Name="TxtBlckPlayer" Text="Joueur 1" Margin="15,0,0,10"/>
-            <TextBlock x:Name="TxtBlckDe" Text="Dé : " Width="150" HorizontalAlignment="Left" Margin="15,0,0,10"/>
-            <Button x:Name="BtnPlay" Content="JOUER" Width="174" HorizontalAlignment="Left" Margin="15,0,0,0"></Button>
-        </StackPanel>
-
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">SERPENT ET ECHELLES</TextBlock>
 
         <Grid x:Name="grdMain2" Grid.Row="1" Grid.Column="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
         </Grid>
+
+        <StackPanel Grid.Column="1" Grid.Row="1" Background="#FFC38F3D" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="TxtBlckJoue" Text="Joueur 1" Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,30,0,0"/>
+            <TextBlock x:Name="TxtBlckDe" Text="Dé : " Width="150" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,30,0,0"/>
+            <Button x:Name="BtnPlay" Content="JOUER" Width="150" HorizontalAlignment="Left" Margin="0,50,0,150"></Button>
+        </StackPanel>
 
     </Grid>
 </Window>
