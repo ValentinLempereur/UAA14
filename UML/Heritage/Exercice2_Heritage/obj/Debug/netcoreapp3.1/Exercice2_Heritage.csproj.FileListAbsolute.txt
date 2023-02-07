@@ -1,0 +1,14 @@
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\bin\Debug\netcoreapp3.1\Exercice2_Heritage.exe
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\bin\Debug\netcoreapp3.1\Exercice2_Heritage.deps.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\bin\Debug\netcoreapp3.1\Exercice2_Heritage.runtimeconfig.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\bin\Debug\netcoreapp3.1\Exercice2_Heritage.runtimeconfig.dev.json
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\bin\Debug\netcoreapp3.1\Exercice2_Heritage.dll
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\bin\Debug\netcoreapp3.1\Exercice2_Heritage.pdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\obj\Debug\netcoreapp3.1\Exercice2_Heritage.csproj.AssemblyReference.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\obj\Debug\netcoreapp3.1\Exercice2_Heritage.GeneratedMSBuildEditorConfig.editorconfig
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\obj\Debug\netcoreapp3.1\Exercice2_Heritage.AssemblyInfoInputs.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\obj\Debug\netcoreapp3.1\Exercice2_Heritage.AssemblyInfo.cs
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\obj\Debug\netcoreapp3.1\Exercice2_Heritage.csproj.CoreCompileInputs.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\obj\Debug\netcoreapp3.1\Exercice2_Heritage.dll
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\obj\Debug\netcoreapp3.1\Exercice2_Heritage.pdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\UML\Heritage\Exercice2_Heritage\obj\Debug\netcoreapp3.1\Exercice2_Heritage.genruntimeconfig.cache
