@@ -1,0 +1,8 @@
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\bin\Debug\Comptoirs.accdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\bin\Debug\PremiereTestBD.exe.config
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\bin\Debug\PremiereTestBD.exe
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\bin\Debug\PremiereTestBD.pdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\obj\Debug\PremiereTestBD.csproj.AssemblyReference.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\obj\Debug\PremiereTestBD.csproj.CoreCompileInputs.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\obj\Debug\PremiereTestBD.exe
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\obj\Debug\PremiereTestBD.pdb
