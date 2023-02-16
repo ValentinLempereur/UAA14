@@ -6,3 +6,7 @@ E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\obj\Debug\Pre
 E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\obj\Debug\PremiereTestBD.csproj.CoreCompileInputs.cache
 E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\obj\Debug\PremiereTestBD.exe
 E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\obj\Debug\PremiereTestBD.pdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\obj\Debug\PremiereTestBD.csproj.SuggestedBindingRedirects.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\bin\Debug\System.Data.OleDb.dll
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\bin\Debug\System.Data.OleDb.xml
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\PremiereTestBD\obj\Debug\PremiereTestBD.csproj.CopyComplete

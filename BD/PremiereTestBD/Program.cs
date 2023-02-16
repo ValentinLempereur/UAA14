@@ -62,10 +62,10 @@ namespace PremiereTestBD
                 Console.WriteLine("Sa ne marche pas");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-
+            
 
             //----------------------------Modifier des information dans une base de donnée----------------------------
-            Console.WriteLine("\nNom du messager dont on veut modifier le numéro de téléphone (Speedy Express / united Package / Federal Shipping)");
+            Console.WriteLine("\nNom du messager dont on veut modifier le numéro de téléphone (Speedy Express / United Package / Federal Shipping)");
             Console.ForegroundColor = ConsoleColor.Yellow;
             string NomMessager = Console.ReadLine();
             Console.ForegroundColor = ConsoleColor.White;
@@ -86,7 +86,43 @@ namespace PremiereTestBD
                 Console.WriteLine("Sa ne marche pas");
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            Console.ReadLine();
+
+
+            //----------------------------Listez tous les éléments d'un champ d'une table dans une base de donnée----------------------------
+            Console.WriteLine("\nListe des catégories disponibles : ");
+            if (Page1.CreationListe(out ds))
+            {
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("\n" + Page1.AfficheList(ds));
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Sa ne marche pas");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+
+            //----------------------------Supprimer une ligne dans une base de donnée----------------------------
+            Console.WriteLine("Supprimer une ligne ddans une table des catégories");
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine("Séléctionné la table");
+            string Table = Console.ReadLine();
+            Console.WriteLine("Séléctionné la ligne");
+            String LeChamp = Console.ReadLine();
+            if (Page1.CreationDelete(LeChamp, Table))
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("La ligne à été suprrimer");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Sa ne marche pas");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            
         }
     }
 }
