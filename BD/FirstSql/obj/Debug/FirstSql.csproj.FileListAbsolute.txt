@@ -1,0 +1,7 @@
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\FirstSql\bin\Debug\FirstSql.exe.config
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\FirstSql\bin\Debug\FirstSql.exe
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\FirstSql\bin\Debug\FirstSql.pdb
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\FirstSql\obj\Debug\FirstSql.csproj.AssemblyReference.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\FirstSql\obj\Debug\FirstSql.csproj.CoreCompileInputs.cache
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\FirstSql\obj\Debug\FirstSql.exe
+E:\5tti informatique Val\2022\Exercice_Git\UAA14\BD\FirstSql\obj\Debug\FirstSql.pdb
