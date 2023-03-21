@@ -1,0 +1,63 @@
+﻿<Window x:Class="CourseDeLevriers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseDeLevriers"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="850">
+    <Grid>
+        <!--_______________________________________________________-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="271*"></RowDefinition>
+            <RowDefinition Height="413*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image Source="Image/racetrack.png" Stretch="None"></Image>
+
+        <GroupBox Header="Salle de paris" Grid.Row="2"></GroupBox>
+        <!--_______________________________________________________-->
+
+        <!--_______________________________________________________-->
+        <Grid Grid.Row="2">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="399*"></ColumnDefinition>
+                <ColumnDefinition Width="399*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="203*"></RowDefinition>
+                <RowDefinition Height="131*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackPanel Margin="0,20,0,0">
+                <TextBlock Text="Parie minimun : 5 écus" FontWeight="Bold"></TextBlock>
+                <RadioButton x:Name="RdnBttnjoe" Content="joe possède 50 écus" Margin="0,10,0,10" Checked="RdnBttn_Checked"></RadioButton>
+                <RadioButton x:Name="RdnBttnBob" Content="Bob possède 75 écus" Margin="0,10,0,10" Checked="RdnBttn_Checked"></RadioButton>
+                <RadioButton x:Name="RdnBttnBill" Content="Bill possède 45 écus" Margin="0,10,0,10" Checked="RdnBttn_Checked"></RadioButton>
+            </StackPanel>
+
+            <StackPanel Margin="0,20,0,0" Grid.Column="2">
+                <TextBlock Text="Paris" FontWeight="Bold"></TextBlock>
+                <TextBlock x:Name="Txtblckjoe" Text=".." Margin="0,10,0,10"></TextBlock>
+                <TextBlock x:Name="TxtblckBob" Text=".." Margin="0,10,0,10"></TextBlock>
+                <TextBlock x:Name="TxtblckBill" Text=".." Margin="0,10,0,10"></TextBlock>   
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Margin="0,20,0,0" >
+                <DockPanel>
+                    <TextBlock x:Name="TxtblckPerson" Text="Bill" Margin="10,0,10,0" ></TextBlock>
+                    <Button x:Name="BtnParie" Content="Parie" Width="40" Margin="10,0,10,0" Click="Parie_Click"></Button>
+                    <TextBox Text="0" Width="30" Margin="10,0,10,0"></TextBox>
+                    <TextBlock Text="écus sur le chien numéro" Margin="10,0,10,0"></TextBlock>
+                    <TextBox Text="" Width="30" Margin="10,0,10,0"></TextBox>
+                    <Button x:Name="BtnStart" Content="LANCER LA COURSE !" Width="150" Click="Start_Click"></Button>
+                </DockPanel>
+                
+                <Button x:Name="BtnReset" Content="RESET" Height="30" Margin="0,50,0,0" Click="BtnReset_Click" ></Button>
+            </StackPanel>
+        </Grid>
+        <!--_______________________________________________________-->
+    </Grid>
+</Window>
