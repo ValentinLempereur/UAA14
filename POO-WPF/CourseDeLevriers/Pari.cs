@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CourseDeLevriers
 {
-    class Pari
+    public class Pari
     {
         private string _joueur;
         private int _montant;

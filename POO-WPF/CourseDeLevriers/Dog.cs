@@ -5,7 +5,7 @@ using System.Windows.Controls;
 
 namespace CourseDeLevriers
 {
-    class Dog
+    public class Dog
     {
         private int _number;
         private Image _image;
@@ -14,6 +14,8 @@ namespace CourseDeLevriers
 
         public Dog(int Number, Image Image, int[] Position, bool Win)
         {
+            _position = new int[2];
+
             _number = Number;
             _image = Image;
             _position[0] = Position[0];
