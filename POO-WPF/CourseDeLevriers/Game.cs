@@ -6,6 +6,7 @@ using System.Windows.Controls;
 
 namespace CourseDeLevriers
 {
+
     public struct Game
     {
         public void Jeu(out Dog[] dog, out Person[] person, out Pari[] parie)
@@ -18,32 +19,6 @@ namespace CourseDeLevriers
             parie = new Pari[3];
 
 
-
-            //----------------Image----------------
-            BitmapImage ImageCours = new BitmapImage();
-            Image[] dogImage = new Image[4];
-
-            for (int i = 0; i < 4; i++)
-            {
-                dogImage[i] = new Image();
-            }
-
-            ImageCours.BeginInit();
-            ImageCours.UriSource = new Uri(@"Image\dog1.png", UriKind.Relative);
-            ImageCours.EndInit();
-            dogImage[0].Source = ImageCours;
-
-            ImageCours.UriSource = new Uri(@"Image\dog2.png", UriKind.Relative);
-            dogImage[1].Source = ImageCours;
-
-            ImageCours.UriSource = new Uri(@"Image\dog3.png", UriKind.Relative);
-            dogImage[2].Source = ImageCours;
-
-            ImageCours.UriSource = new Uri(@"Image\dog4.png", UriKind.Relative);
-            dogImage[3].Source = ImageCours;
-
-
-
             //----------------CreationPerson----------------
             person[0] = new Person("Joe", 50, 0);
             person[1] = new Person("Bob", 75, 0);
@@ -52,12 +27,20 @@ namespace CourseDeLevriers
 
 
             //----------------CreationDog----------------
-            for (int i = 0; i < 4; i++)
-            {
-                PositionDepart[0] = 1;
-                PositionDepart[1] = 1;
-                dog[i] = new Dog(i, dogImage[i], PositionDepart, false);
-            }
+
+            PositionDepart[0] = 40; //730
+            PositionDepart[1] = 25;
+            dog[0] = new Dog(0, PositionDepart, false);
+
+            PositionDepart[1] = 75;
+            dog[1] = new Dog(1, PositionDepart, false);
+
+            PositionDepart[1] = 150;
+            dog[2] = new Dog(2, PositionDepart, false);
+
+            PositionDepart[1] = 225;
+            dog[3] = new Dog(3, PositionDepart, false);
+
 
 
 
@@ -68,9 +51,43 @@ namespace CourseDeLevriers
 
         }
 
-        public void Parie()
+        public void Parie(Person[] person, int nbr, int ndog, string who, out string text, Pari[] parie)
         {
-            
+            text = who + " n'a pas encore parié";
+
+            if (ndog >= 1 && ndog <= 4)
+            {
+                if (nbr >= 5)
+                {
+                    if (who == "Joe")
+                    {
+                        if (nbr < person[0].money)
+                        {
+                            text = "Joe a parié " + nbr + " sur le chien n° " + ndog;
+                            parie[0].montant = nbr;
+                            parie[0].numberDog = ndog;
+                        }
+                    }
+                    else if (who == "Bob")
+                    {
+                        if (nbr < person[1].money)
+                        {
+                            text = "Bob a parié " + nbr + " sur le chien n° " + ndog;
+                            parie[0].montant = nbr;
+                            parie[0].numberDog = ndog;
+                        }
+                    }
+                    else if (who == "Bill")
+                    {
+                        if (nbr < person[2].money)
+                        {
+                            text = "bill a parié " + nbr + " sur le chien n° " + ndog;
+                            parie[0].montant = nbr;
+                            parie[0].numberDog = ndog;
+                        }
+                    }
+                }
+            }
         }
     }
 }

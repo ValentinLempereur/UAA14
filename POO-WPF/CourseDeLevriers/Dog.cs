@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 
 namespace CourseDeLevriers
 {
@@ -12,15 +13,33 @@ namespace CourseDeLevriers
         private int[] _position;
         private bool _win;
 
-        public Dog(int Number, Image Image, int[] Position, bool Win)
+        public Dog(int Number, int[] Position, bool Win)
         {
             _position = new int[2];
-
-            _number = Number;
-            _image = Image;
             _position[0] = Position[0];
             _position[1] = Position[1];
+
+            _number = Number;
             _win = Win;
+
+            //----------------------------image----------------------------
+            MainWindow plateau = (CourseDeLevriers.MainWindow)App.Current.MainWindow;
+
+            BitmapImage ImageCours = new BitmapImage();
+            ImageCours.BeginInit();
+            ImageCours.UriSource = new Uri(@"Image\dog.png", UriKind.Relative);
+            ImageCours.EndInit();
+
+            _image = new Image();
+            _image.Source = ImageCours;
+            _image.Stretch = System.Windows.Media.Stretch.None;
+
+            Canvas.SetLeft(_image, position[0]);
+            Canvas.SetTop(_image, position[1]);
+            plateau.CanvasDog.Children.Add(image);
+            //--------------------------------------------------------
+
+
         }
 
 

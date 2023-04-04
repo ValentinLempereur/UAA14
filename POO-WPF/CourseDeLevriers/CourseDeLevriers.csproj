@@ -7,9 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Image\dog1.png">
+    <None Remove="Image\dog.png" />
+    <None Remove="Image\racetrack.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\dog.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    </Resource>
+    <Resource Include="Image\racetrack.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

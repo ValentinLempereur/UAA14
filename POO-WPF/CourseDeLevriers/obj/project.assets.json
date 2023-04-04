@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\160646.asty-moulin\\Documents\\UAA14\\POO-WPF\\CourseDeLevriers\\CourseDeLevriers.csproj",
+      "projectUniqueName": "C:\\Users\\160646.asty-moulin\\Downloads\\UAA14\\POO-WPF\\CourseDeLevriers\\CourseDeLevriers.csproj",
       "projectName": "CourseDeLevriers",
-      "projectPath": "C:\\Users\\160646.asty-moulin\\Documents\\UAA14\\POO-WPF\\CourseDeLevriers\\CourseDeLevriers.csproj",
+      "projectPath": "C:\\Users\\160646.asty-moulin\\Downloads\\UAA14\\POO-WPF\\CourseDeLevriers\\CourseDeLevriers.csproj",
       "packagesPath": "C:\\Users\\160646.asty-moulin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\160646.asty-moulin\\Documents\\UAA14\\POO-WPF\\CourseDeLevriers\\obj\\",
+      "outputPath": "C:\\Users\\160646.asty-moulin\\Downloads\\UAA14\\POO-WPF\\CourseDeLevriers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
