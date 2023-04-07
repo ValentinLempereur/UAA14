@@ -20,6 +20,8 @@ namespace Banque
     /// </summary>
     public partial class MainWindow : Window
     {
+        StackPanel StackLogin = new StackPanel();
+        StackPanel StackRegister = new StackPanel();
         public MainWindow()
         {
             InitializeComponent();
@@ -28,68 +30,152 @@ namespace Banque
 
         public void PrepareInitialize()
         {
+            //-----------------This-----------------
             this.Background = Brushes.Bisque;
+            this.FontSize = 16;
 
-            StackPanel StackLogin = new StackPanel();
-            StackPanel StackRegister = new StackPanel();
+            //-----------------Margin-----------------
+            Thickness myThickness = new Thickness();
+            
 
+            //-----------------Bouton-----------------
             Button Login = new Button();
             Button Register = new Button();
             Button Enter = new Button();
 
+            myThickness.Top = 20;
+
+            Login.Content = "Se connecter";
             Login.Click += new RoutedEventHandler(login_Click);
+            Login.Width = 100;
+            Login.Height = 30;
+            Login.Margin = myThickness;
+
+            Register.Content = "S'en registrer";
             Register.Click += new RoutedEventHandler(Register_Click);
+            Register.Width = 100;
+            Register.Height = 30;
+            Register.Margin = myThickness;
+
+            myThickness.Top = 350;
+
+            Enter.Content = "Enter";
             Enter.Click += new RoutedEventHandler(Enter_Click);
+            Enter.Width = 120;
+            Enter.Height = 40;
+            Enter.Margin = myThickness;
+
+            //-----------------Login-----------------
+            myThickness.Top = 20;
 
             TextBlock TxtLogin = new TextBlock();
             TextBox Loginname = new TextBox();
             TextBox LoginPassWord = new TextBox();
 
+            myThickness.Left = 130;
+
             TxtLogin.Text = "Connectez-vous";
+            TxtLogin.FontWeight = FontWeights.Bold;
+            TxtLogin.Width = 250;
+            TxtLogin.Height = 30;
+            TxtLogin.Margin = myThickness;
+            myThickness.Left = 0;
+
             Loginname.Text = "entrez votre nom d'utilisateur";
+            Loginname.Width = 250;
+            Loginname.Height = 30;
+            Loginname.Margin = myThickness;
+
+            myThickness.Top = 8;
+
             LoginPassWord.Text = "Entrez votre mot de passe";
+            LoginPassWord.Width = 250;
+            LoginPassWord.Height = 30;
+            LoginPassWord.Margin = myThickness;
+
+            //-----------------Register-----------------
+            myThickness.Top = 20;
 
             TextBlock TxtRegister = new TextBlock();
             TextBox RegisterName = new TextBox();
             TextBox RegisterPassWord = new TextBox();
             TextBox RegisterPassWord2 = new TextBox();
 
+            myThickness.Left = 170;
+
             TxtRegister.Text = "Inscrivez-vous";
+            TxtRegister.Width = 300;
+            TxtRegister.Height = 30;
+            TxtRegister.FontWeight = FontWeights.Bold;
+            TxtRegister.Margin = myThickness;
+            myThickness.Left = 0;
+
             RegisterName.Text = "Entrez un nom d'utilisateur";
+            RegisterName.Width = 300;
+            RegisterName.Height = 30;
+            RegisterName.Margin = myThickness;
+
+            myThickness.Top = 8;
+
             RegisterPassWord.Text = "Entrez un mot de passe";
+            RegisterPassWord.Width = 300;
+            RegisterPassWord.Height = 30;
+            RegisterPassWord.Margin = myThickness;
+
             RegisterPassWord2.Text = "Entrez un nouveau votre mot de passe";
+            RegisterPassWord2.Width = 300;
+            RegisterPassWord2.Height = 30;
+            RegisterPassWord2.Margin = myThickness;
+
+            //-----------------StackPanel-----------------
+            StackLogin.VerticalAlignment = VerticalAlignment.Center;
+            StackLogin.HorizontalAlignment = HorizontalAlignment.Center;
+
+            StackRegister.VerticalAlignment = VerticalAlignment.Center;
+            StackRegister.HorizontalAlignment = HorizontalAlignment.Center;
 
             StackLogin.Children.Add(TxtLogin);
             StackLogin.Children.Add(Loginname);
+            StackLogin.Children.Add(LoginPassWord);
             StackLogin.Children.Add(Register);
-            StackLogin.Children.Add(Enter);
 
             StackRegister.Children.Add(TxtRegister);
             StackRegister.Children.Add(RegisterName);
             StackRegister.Children.Add(RegisterPassWord);
             StackRegister.Children.Add(RegisterPassWord2);
-            StackRegister.Children.Add(Enter);
+            StackRegister.Children.Add(Login);
 
-            StackRegister.Visibility = Visibility.Visible;
+            StackRegister.Visibility = Visibility.Hidden;
 
+            //-----------------grdMain-----------------
             grdMain.Children.Add(StackLogin);
             grdMain.Children.Add(StackRegister);
+            grdMain.Children.Add(Enter);
         }
 
         public void login_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            StackLogin.Visibility = Visibility.Visible;
+            StackRegister.Visibility = Visibility.Hidden;
         }
 
 
         public void Register_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            StackLogin.Visibility = Visibility.Hidden;
+            StackRegister.Visibility = Visibility.Visible;
         }
 
         public void Enter_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            if (StackLogin.Visibility == Visibility.Visible)
+            {
+
+            }
+            else
+            {
+                
+            }
         }
 
     }
