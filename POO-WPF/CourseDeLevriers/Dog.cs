@@ -12,6 +12,7 @@ namespace CourseDeLevriers
         private Image _image;
         private int[] _position;
         private bool _win;
+        Random rand = new Random();
 
         public Dog(int Number, int[] Position, bool Win)
         {
@@ -21,6 +22,8 @@ namespace CourseDeLevriers
 
             _number = Number;
             _win = Win;
+
+
 
             //----------------------------image----------------------------
             MainWindow plateau = (CourseDeLevriers.MainWindow)App.Current.MainWindow;
@@ -42,6 +45,38 @@ namespace CourseDeLevriers
 
         }
 
+        public void ResetMoov()
+        {
+            position[0] = 40;
+            Canvas.SetLeft(_image, position[0]);
+        }
+        public bool MoovDog()
+        {
+            position[0] += rand.Next(10, 50);
+            Canvas.SetLeft(_image, position[0]);
+
+            if (position[0] >= 650)
+            {
+                _win = true;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool IsWin()
+        {
+            if (_win == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
         public int number
         {

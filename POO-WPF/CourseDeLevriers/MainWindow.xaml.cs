@@ -27,21 +27,18 @@ namespace CourseDeLevriers
         Pari[] parie;
         DispatcherTimer timer = new DispatcherTimer();
 
-        int[] NbrRand = new int[4];
-
-
 
         public MainWindow()
         {
             InitializeComponent();
-            timer.Tick += new EventHandler(Timer_Tick);
+            game.Jeu(out dog, out person, out parie);
             timer.Interval = TimeSpan.FromSeconds(.1);
+            timer.Tick += new EventHandler(Timer_Tick);
             CreationJeu();
         }
 
         public void CreationJeu()
         {
-            game.Jeu(out dog, out person, out parie);
 
             RdnBttnjoe.Content = "Joe possède " + person[0].money + " écus";
             RdnBttnBob.Content = "Bob possède " + person[1].money + " écus";
@@ -64,28 +61,24 @@ namespace CourseDeLevriers
                 if (TxtblckPerson.Text == "Joe")
                 {
                     Txtblckjoe.Text = text;
+                    RdnBttnjoe.Content = "Joe possède " + person[0].money + " écus";
                 }
                 else if (TxtblckPerson.Text == "Bob")
                 {
                     TxtblckBob.Text = text;
+                    RdnBttnBob.Content = "Bob possède " + person[1].money + " écus";
 
                 }
                 else if (TxtblckPerson.Text == "Bill")
                 {
                     TxtblckBill.Text = text;
+                    RdnBttnBill.Content = "Bill possède " + person[2].money + " écus";
                 }
             }
         }
         
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            Random rand = new Random();
-
-            NbrRand[0] = rand.Next(80, 120);
-            NbrRand[1] = rand.Next(80, 120);
-            NbrRand[2] = rand.Next(80, 120);
-            NbrRand[3] = rand.Next(80, 120);
-
             timer.Start();
         }
 
@@ -98,6 +91,12 @@ namespace CourseDeLevriers
             person[0].money = 50;
             person[1].money = 75;
             person[2].money = 45;
+
+            for (int i = 0; i < 3; i++)
+            {
+                parie[i].montant = 0;
+                parie[i].numberDog = 0;
+            }
 
             Txtblckjoe.Text = "Joe n'a pas encore parié";
             TxtblckBob.Text = "Bob n'a pas encore parié";
@@ -123,11 +122,48 @@ namespace CourseDeLevriers
             nbrparie.Text = "";
         }
 
-        private void Timer_Tick(object sender, RoutedEventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
-            if ()
+            for (int i = 0; i < 4; i++)
             {
-                
+                if (dog[i].MoovDog())
+                {
+                    timer.Stop();
+                    for (int chiengagnant = 0; chiengagnant < 4; chiengagnant++)
+                    {
+                        if(dog[chiengagnant].IsWin())
+                        {
+                            chiengagnant += 1;
+                            MessageBox.Show("Le gagnant est le chien n° " + chiengagnant);
+                            
+
+                            for (i = 0; i < 3; i++)
+                            {
+                                if (parie[i].numberDog == chiengagnant)
+                                {
+                                    person[i].money += parie[i].montant * 2;
+                                }
+                            }
+                            chiengagnant -= 1;
+
+                            //reset--------
+                            for (i = 0; i < 3; i++)
+                            {
+                                parie[i].montant = 0;
+                                parie[i].numberDog = 0;
+                            }
+
+                            for (i = 0; i < 4; i++)
+                            {
+                                dog[i].ResetMoov();
+                            }
+
+                            dog[chiengagnant].win = false;
+
+                            CreationJeu();
+                        }
+                    }
+                }
             }
         }
     }

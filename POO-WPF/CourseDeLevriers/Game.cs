@@ -28,7 +28,7 @@ namespace CourseDeLevriers
 
             //----------------CreationDog----------------
 
-            PositionDepart[0] = 40; //730
+            PositionDepart[0] = 40;
             PositionDepart[1] = 25;
             dog[0] = new Dog(0, PositionDepart, false);
 
@@ -66,6 +66,7 @@ namespace CourseDeLevriers
                             text = "Joe a parié " + nbr + " sur le chien n° " + ndog;
                             parie[0].montant = nbr;
                             parie[0].numberDog = ndog;
+                            person[0].money -= nbr;
                         }
                     }
                     else if (who == "Bob")
@@ -73,8 +74,9 @@ namespace CourseDeLevriers
                         if (nbr < person[1].money)
                         {
                             text = "Bob a parié " + nbr + " sur le chien n° " + ndog;
-                            parie[0].montant = nbr;
-                            parie[0].numberDog = ndog;
+                            parie[1].montant = nbr;
+                            parie[1].numberDog = ndog;
+                            person[1].money -= nbr;
                         }
                     }
                     else if (who == "Bill")
@@ -82,8 +84,9 @@ namespace CourseDeLevriers
                         if (nbr < person[2].money)
                         {
                             text = "bill a parié " + nbr + " sur le chien n° " + ndog;
-                            parie[0].montant = nbr;
-                            parie[0].numberDog = ndog;
+                            parie[2].montant = nbr;
+                            parie[2].numberDog = ndog;
+                            person[2].money -= nbr;
                         }
                     }
                 }
