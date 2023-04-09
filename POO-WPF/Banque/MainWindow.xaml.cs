@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+//Base de donnée
+using System.Data;
+using Banque.Class;
 
 namespace Banque
 {
@@ -20,8 +23,17 @@ namespace Banque
     /// </summary>
     public partial class MainWindow : Window
     {
+        MysqlRequete mysql = new MysqlRequete();
+
         StackPanel StackLogin = new StackPanel();
         StackPanel StackRegister = new StackPanel();
+
+        TextBox LoginName = new TextBox();
+        TextBox LoginPassWord = new TextBox();
+
+        TextBox RegisterName = new TextBox();
+        TextBox RegisterPassWord = new TextBox();
+        TextBox RegisterPassWord2 = new TextBox();
         public MainWindow()
         {
             InitializeComponent();
@@ -31,7 +43,7 @@ namespace Banque
         public void PrepareInitialize()
         {
             //-----------------This-----------------
-            this.Background = Brushes.Bisque;
+            this.Background = Brushes.Tomato;
             this.FontSize = 16;
 
             //-----------------Margin-----------------
@@ -59,7 +71,7 @@ namespace Banque
 
             myThickness.Top = 350;
 
-            Enter.Content = "Enter";
+            Enter.Content = "Entrer";
             Enter.Click += new RoutedEventHandler(Enter_Click);
             Enter.Width = 120;
             Enter.Height = 40;
@@ -69,8 +81,6 @@ namespace Banque
             myThickness.Top = 20;
 
             TextBlock TxtLogin = new TextBlock();
-            TextBox Loginname = new TextBox();
-            TextBox LoginPassWord = new TextBox();
 
             myThickness.Left = 130;
 
@@ -81,10 +91,10 @@ namespace Banque
             TxtLogin.Margin = myThickness;
             myThickness.Left = 0;
 
-            Loginname.Text = "entrez votre nom d'utilisateur";
-            Loginname.Width = 250;
-            Loginname.Height = 30;
-            Loginname.Margin = myThickness;
+            LoginName.Text = "entrez votre nom d'utilisateur";
+            LoginName.Width = 250;
+            LoginName.Height = 30;
+            LoginName.Margin = myThickness;
 
             myThickness.Top = 8;
 
@@ -96,10 +106,7 @@ namespace Banque
             //-----------------Register-----------------
             myThickness.Top = 20;
 
-            TextBlock TxtRegister = new TextBlock();
-            TextBox RegisterName = new TextBox();
-            TextBox RegisterPassWord = new TextBox();
-            TextBox RegisterPassWord2 = new TextBox();
+            TextBlock TxtRegister = new TextBlock();           
 
             myThickness.Left = 170;
 
@@ -135,7 +142,7 @@ namespace Banque
             StackRegister.HorizontalAlignment = HorizontalAlignment.Center;
 
             StackLogin.Children.Add(TxtLogin);
-            StackLogin.Children.Add(Loginname);
+            StackLogin.Children.Add(LoginName);
             StackLogin.Children.Add(LoginPassWord);
             StackLogin.Children.Add(Register);
 
@@ -157,6 +164,9 @@ namespace Banque
         {
             StackLogin.Visibility = Visibility.Visible;
             StackRegister.Visibility = Visibility.Hidden;
+
+            LoginName.Text = "entrez votre nom d'utilisateur";
+            LoginPassWord.Text = "Entrez votre mot de passe";
         }
 
 
@@ -164,17 +174,88 @@ namespace Banque
         {
             StackLogin.Visibility = Visibility.Hidden;
             StackRegister.Visibility = Visibility.Visible;
+            
+            RegisterName.Text = "Entrez un nom d'utilisateur";
+            RegisterPassWord.Text = "Entrez un mot de passe";
+            RegisterPassWord2.Text = "Entrez un nouveau votre mot de passe";
         }
 
         public void Enter_Click(object sender, RoutedEventArgs e)
         {
             if (StackLogin.Visibility == Visibility.Visible)
             {
-
+                if (LoginName.Text == "")
+                {
+                    MessageBox.Show("Le champ utilisateur est vide");
+                }
+                else
+                {
+                    if (LoginPassWord.Text == "")
+                    {
+                        MessageBox.Show("Le champ de mot de passe est vide");
+                    }
+                    else
+                    {
+                        mysql.SelectInfosAll("SELECT * FROM users WHERE user_name =\"" + LoginName.Text + "\"", out DataSet ds, out int Nbr);
+                        if(Nbr == 0)
+                        {
+                            MessageBox.Show("Utilisateur introuvable");
+                        }
+                        else
+                        {
+                            mysql.InfosUser(ds, out int Id, out string Name, out string Password);
+                            if (Password == LoginPassWord.Text)
+                            {
+                                //changer de page
+                            }
+                            else
+                            {
+                                MessageBox.Show("Le mot de passe est incorrect");
+                            }
+                        }
+                    }
+                }
             }
             else
             {
-                
+                if (RegisterName.Text == "")
+                {
+                    MessageBox.Show("Le champ utilisateur est vide");
+                }
+                else
+                {
+                    if (RegisterPassWord.Text == "" || RegisterPassWord2.Text == "")
+                    {
+                        MessageBox.Show("Le champ de mot de passe est vide");
+                    }
+                    else
+                    {
+                        if (RegisterPassWord.Text == RegisterPassWord2.Text)
+                        {
+                            mysql.SelectInfosAll("SELECT * FROM users WHERE user_name =\"" + RegisterName.Text + "\"", out DataSet ds, out int Nbr);
+
+                            if (Nbr >= 1) 
+                            {
+                                MessageBox.Show("Le nom de l'utilisateur existe déjà");
+                            }
+                            else
+                            {
+                                if(mysql.NewUser(RegisterName.Text, RegisterPassWord.Text))
+                                {
+                                    //changer de page
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Imposible de s'enregistrer, Vérifier vos données");
+                                }
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Les mots de passe ne sont pas les même");
+                        }
+                    }
+                }              
             }
         }
 
