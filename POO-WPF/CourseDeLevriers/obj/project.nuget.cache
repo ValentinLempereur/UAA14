@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NnRLY6h08krrfb4yryKxIaT1kvNj/I1q0PKBBqYtrgdgU8QzIBXbUbnSuv5uSdrxotjMXH1QS9HckZv5w3eQZw==",
+  "dgSpecHash": "zy139WzIr+yUnefgwi5e0vvpLZN0+Kx1myWEymyjcFxjqdmiXdyepxM7qbZn6Hj2RYwgZGL1+EdcDeltsiOAKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\160646.asty-moulin\\Downloads\\UAA14\\POO-WPF\\CourseDeLevriers\\CourseDeLevriers.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\UAA14\\POO-WPF\\CourseDeLevriers\\CourseDeLevriers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lemer\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\lemer\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\lemer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\lemer\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\3.1.32\\microsoft.netcore.app.host.win-x86.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }
